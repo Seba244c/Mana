@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Reload CMake - Debug",
+        "cmd": "./tools/configure_debug.sh"
+    },
+    {
+        "name": "Build",
+        "cmd": "./tools/build.sh"
+    },
+    {
+        "name": "Test",
+        "cmd": "./tools/test.sh"
+    }
+]

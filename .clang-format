@@ -1,0 +1,12 @@
+---
+Language: Cpp
+IndentWidth: 4
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^[<"]mpch\.h[">]'
+    Priority: -1000
+  # Same-name header (e.g., Foo.cpp includes "Foo.h")
+  - Regex: '^"([^/]+)\.h"'
+    Priority: -900
+  - Regex: '^"(Mana)/'
+    Priority: 0

@@ -1,0 +1,12 @@
+[submodule "libs/glfw"]
+	path = libs/glfw
+	url = git@github.com:glfw/glfw.git
+[submodule "libs/msdf-atlas-gen"]
+	path = libs/msdf-atlas-gen
+	url = git@github.com:Chlumsky/msdf-atlas-gen.git
+[submodule "libs/SDL"]
+	path = libs/SDL
+	url = git@github.com:libsdl-org/SDL.git
+[submodule "libs/lz4"]
+	path = libs/lz4
+	url = git@github.com:lz4/lz4.git
