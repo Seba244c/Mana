@@ -16,6 +16,7 @@ A C++23 game engine library. Used in my game project Spellrite.
 
 ## What's in this repository
 - assets/ - Assets used at runtime by Mana
+- demos/  - Demo games
 - cmake/  - Compiler toolchains
 - libs/   - Dependencies
 - src/    - Source code

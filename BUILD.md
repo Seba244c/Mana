@@ -7,7 +7,7 @@
 You must have installed `Python3`, `CMake`, `ninja` and `vcpkg` to be able to use the tooling around Mana and Spellrite. Further down this document will be more dependencies depending on you operating system.
 
 ### Unix like systems
-We are only support using the LLVM / clang toolchain
+We only support using the LLVM / clang toolchain
 
 **Ubuntu** `sudo apt install libwayland-dev libxkbcommon-dev glslc libpulse-dev clang`
 

@@ -60,6 +60,7 @@ void Application::Start() {
     if constexpr (ISDEBUG) {
         sourceFolders = m_AppConfig.Assets_SourceFolders;
 
+#ifdef MANA_DEV_ASSETS_FOLDER
         if (std::filesystem::exists(MANA_DEV_ASSETS_FOLER))
             sourceFolders.push_back(MANA_DEV_ASSETS_FOLER);
         else {
@@ -69,6 +70,7 @@ void Application::Start() {
                     "precompiled motes,");
             MC_WARN("Or if you are said developer.");
         }
+#endif
     }
     m_Assets =
         CreateScope<AssetManager>("./MoteCache/", sourceFolders, m_Services);

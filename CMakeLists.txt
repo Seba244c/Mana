@@ -120,3 +120,6 @@ target_sources(Mana
 if(DEFINED MANA_ENABLE_TESTS OR PROJECT_IS_TOP_LEVEL)
     add_subdirectory(tests)
 endif()
+if(DEFINED MANA_ENABLE_DEMOS OR PROJECT_IS_TOP_LEVEL)
+    add_subdirectory(demos)
+endif()

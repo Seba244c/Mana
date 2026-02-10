@@ -1,14 +1,18 @@
 [
     {
-        "name": "Reload CMake - Debug",
-        "cmd": "./tools/configure_debug.sh"
-    },
-    {
         "name": "Build",
         "cmd": "./tools/build.sh"
     },
     {
         "name": "Test",
         "cmd": "./tools/test.sh"
+    },
+    {
+        "name": "Run Demo",
+        "cmd": "./tools/run_demo.sh"
+    },
+    {
+        "name": "Reload CMake - Debug",
+        "cmd": "./tools/configure_debug.sh"
     }
 ]

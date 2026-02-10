@@ -1,2 +1,2 @@
 #!/bin/sh
-cmake --build out -t Mana
+cmake --build out
