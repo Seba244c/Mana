@@ -19,6 +19,11 @@ void glCreateBuffers(GLsizei n, GLuint *buffers) {
     }
 }
 
+void glCreateFramebuffers(GLsizei n, GLuint *framebuffers) {
+    glGenFramebuffers(n, framebuffers);
+    // TODO: SHOULD WE BIND?
+}
+
 void glCreateVertexArrays(GLsizei n, GLuint *arrays) {
     glGenVertexArrays(n, arrays);
 
@@ -93,6 +98,11 @@ void glTextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat,
 #endif
 
     glBindTexture(GL_TEXTURE_2D, prev);
+}
+
+void glTexStorage2D(GLuint texture, GLsizei levels, GLenum internalformat,
+                    GLsizei width, GLsizei height) {
+    glTextureStorage2D(texture, levels, internalformat, width, height);
 }
 
 void glTextureSubImage2D(GLuint texture, GLint level, GLint xoffset,
