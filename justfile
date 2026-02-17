@@ -21,3 +21,8 @@ test: build
 run_demo: build
     out/demos/TappyBird/TappyBird
 
+build_docs: build
+    doxygen out/docs/Doxyfile.Docs
+
+docs: build_docs
+    open out/docs/html/index.html

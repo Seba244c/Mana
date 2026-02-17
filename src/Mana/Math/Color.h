@@ -4,10 +4,23 @@
 #include "Mana/World/Component.h"
 
 namespace Mana {
+/**
+ * \brief Represents a single RGBA color with floats bound between 0≤f≤1
+ */
 struct Color {
     COMPONENT_NAME(Color);
 
-    float r, g, b, a;
+    /** Red component (0≤r≤1) */
+    float r;
+
+    /** Green component (0≤r≤1) */
+    float g;
+
+    /** Blue component (0≤r≤1) */
+    float b;
+
+    /** Alpha component (0≤r≤1) */
+    float a;
 
     constexpr Color(const float r, const float g, const float b,
                     const float a = 1.0f)

@@ -9,7 +9,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(tests "src/Math.cpp")
+add_executable(tests "src/Math.cpp" "src/Input.cpp")
 target_link_libraries(tests PRIVATE GTest::gtest_main Mana)
 include(GoogleTest)
 gtest_discover_tests(tests)
